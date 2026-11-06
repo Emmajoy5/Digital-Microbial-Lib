@@ -265,7 +265,7 @@ footer p{margin:0 0 6px;max-width:60ch}
     <div class="more">
       <div><h3>QR labels for vials</h3><p>Print labels with a QR code that opens the strain's record on any phone, plus its ID, name and storage position.</p></div>
       <div><h3>Works on phones and tablets</h3><p>Scan a code on the Connect page and use the same live library on your own device. No app store, nothing to install.</p></div>
-      <div><h3>Several labs, one installation</h3><p>Labs share a server but never see each other's data. New colleagues join with a lab code and an administrator approves them.</p></div>
+      <div><h3>One lab, one installation</h3><p>Each lab runs its own copy on its own computer or server. New colleagues ask to join with the lab's code, and a lab admin approves them.</p></div>
       <div><h3>Your data, always exportable</h3><p>A lab administrator can download a ZIP of plain CSV files with everything in the lab's catalogue.</p></div>
     </div>
   </div>
@@ -279,8 +279,8 @@ footer p{margin:0 0 6px;max-width:60ch}
     </div>
     <table class="tested">
       <tbody>
-        <tr><th scope="row">Automated checks</th><td>600 checks pass on a clean installation of version 4.7.0, run automatically on every change.</td></tr>
-        <tr><th scope="row">Lab separation</th><td>In cross-laboratory tests, no lab could read, change, search, export or fetch another lab's records or files.</td></tr>
+        <tr><th scope="row">Automated checks</th><td>591 checks pass on a clean installation of version 4.7.0, run automatically on every change.</td></tr>
+        <tr><th scope="row">Accounts</th><td>Only accounts a lab admin has created or approved can sign in. First-time setup needs a one-time code from the server, so nobody else on the network can claim the lab.</td></tr>
         <tr><th scope="row">Spreadsheet import</th><td>A 5,000-row file imported in about one second, with row-level error and duplicate reports.</td></tr>
         <tr><th scope="row">Large catalogue</th><td>A catalogue of 5,000 strains listed in about 0.25 seconds.</td></tr>
         <tr><th scope="row">Revival dates</th><td>Green, amber and red status were checked for not due, due within five days, due today and overdue, and for a failed revival or a strain with no start date.</td></tr>
@@ -316,7 +316,7 @@ footer p{margin:0 0 6px;max-width:60ch}
     <details><summary>Is it free?</summary><p>Yes. It is released under the MIT licence, so labs can use, change and share it at no charge. The code will be published on GitHub, with each release archived on Zenodo under a citable DOI.</p></details>
     <details><summary>Can I try it now?</summary><p>Watch the tour above to see every main screen. A public demo with example strains and plate photographs is being prepared; it resets itself every few hours, so nothing entered there is kept. <span data-needs="contactEmail" hidden>Write to us if your lab would like to be an early user.</span></p></details>
     <details><summary>What does it run on?</summary><p>Python on Windows, Mac or Linux, with a web browser on any device on the same network. A Docker setup is included and is built by the automated tests on every change.</p></details>
-    <details><summary>Can several people and labs use it?</summary><p>Yes. Each person has their own account. Several labs can share one installation, with their data kept separate and membership approved by a lab administrator.</p></details>
+    <details><summary>Can several people use it?</summary><p>Yes. Each person has their own account, and everyone works on the same live catalogue from their own computer, tablet or phone. One installation holds one lab. A second lab sets up its own installation and keeps its data to itself.</p></details>
     <details><summary>Is it suitable for regulated work?</summary><p>Not yet. Records are dated and attributed to the person who made them, but the tool has no electronic signatures and has not been validated for GLP or GMP use.</p></details>
     <details><summary>How do I cite it?</summary><p>A paper describing the tool is in preparation. Until it is published, please cite the software release; its DOI will appear here once version 4.7.0 is archived on Zenodo.</p></details>
   </div>
