@@ -279,12 +279,14 @@ footer p{margin:0 0 6px;max-width:60ch}
     </div>
     <table class="tested">
       <tbody>
-        <tr><th scope="row">Automated checks</th><td>537 checks pass on a clean installation.</td></tr>
+        <tr><th scope="row">Automated checks</th><td>600 checks pass on a clean installation of version 4.7.0, run automatically on every change.</td></tr>
         <tr><th scope="row">Lab separation</th><td>In cross-laboratory tests, no lab could read, change, search, export or fetch another lab's records or files.</td></tr>
         <tr><th scope="row">Spreadsheet import</th><td>A 5,000-row file imported in about one second, with row-level error and duplicate reports.</td></tr>
         <tr><th scope="row">Large catalogue</th><td>A catalogue of 5,000 strains listed in about 0.25 seconds.</td></tr>
-        <tr><th scope="row">Revival dates</th><td>Green, amber and red status were checked for not due, due within five days, due today and overdue.</td></tr>
-        <tr><th scope="row">Upgrades</th><td>Databases from four earlier releases upgraded automatically, and exported catalogues imported again without errors.</td></tr>
+        <tr><th scope="row">Revival dates</th><td>Green, amber and red status were checked for not due, due within five days, due today and overdue, and for a failed revival or a strain with no start date.</td></tr>
+        <tr><th scope="row">Upgrades</th><td>Databases from five earlier releases upgraded automatically, and exported catalogues imported again without errors.</td></tr>
+        <tr><th scope="row">Plate photographs</th><td>Colony reading was tried on five real plate photographs, including small colonies on a counting grid, marker labels on the dish and a plate held in a gloved hand. Photos it cannot read reliably, such as those on an uneven background, are flagged rather than scored.</td></tr>
+        <tr><th scope="row">Record history</th><td>Entries are voided with a reason instead of deleted, and every change is kept in an audit log.</td></tr>
       </tbody>
     </table>
     <p class="note">No independent security audit and no study with laboratory users has been done yet. The tool is not validated for regulated (GLP or GMP) record keeping.</p>
@@ -311,12 +313,12 @@ footer p{margin:0 0 6px;max-width:60ch}
 <section id="faq" class="tint" aria-labelledby="h-faq">
   <div class="wrap" style="max-width:860px">
     <div class="sec-head"><h2 id="h-faq">Questions</h2></div>
-    <details><summary>Is it free?</summary><p>Yes. It is released under the MIT licence, so labs can use, change and share it at no charge. The public code release is planned for when the accompanying paper is published.</p></details>
-    <details><summary>Can I try it now?</summary><p>Watch the tour above to see every main screen. A live demo is not available yet. <span data-needs="contactEmail" hidden>Write to us if your lab would like to be an early user.</span></p></details>
-    <details><summary>What does it run on?</summary><p>Python on Windows, Mac or Linux, with a web browser on any device on the same network. A Docker setup is included but has not been tested yet.</p></details>
+    <details><summary>Is it free?</summary><p>Yes. It is released under the MIT licence, so labs can use, change and share it at no charge. The code will be published on GitHub, with each release archived on Zenodo under a citable DOI.</p></details>
+    <details><summary>Can I try it now?</summary><p>Watch the tour above to see every main screen. A public demo with example strains and plate photographs is being prepared; it resets itself every few hours, so nothing entered there is kept. <span data-needs="contactEmail" hidden>Write to us if your lab would like to be an early user.</span></p></details>
+    <details><summary>What does it run on?</summary><p>Python on Windows, Mac or Linux, with a web browser on any device on the same network. A Docker setup is included and is built by the automated tests on every change.</p></details>
     <details><summary>Can several people and labs use it?</summary><p>Yes. Each person has their own account. Several labs can share one installation, with their data kept separate and membership approved by a lab administrator.</p></details>
     <details><summary>Is it suitable for regulated work?</summary><p>Not yet. Records are dated and attributed to the person who made them, but the tool has no electronic signatures and has not been validated for GLP or GMP use.</p></details>
-    <details><summary>How do I cite it?</summary><p>A paper describing the tool is in preparation. Citation details will appear here when it is published.</p></details>
+    <details><summary>How do I cite it?</summary><p>A paper describing the tool is in preparation. Until it is published, please cite the software release; its DOI will appear here once version 4.7.0 is archived on Zenodo.</p></details>
   </div>
 </section>
 </main>
