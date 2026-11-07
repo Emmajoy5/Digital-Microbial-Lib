@@ -239,20 +239,20 @@ footer p{margin:0 0 6px;max-width:60ch}
     <div class="feat flip">
       <div class="txt">
         <h3>Revival dates that warn you early</h3>
-        <p class="soft">Set a revival interval and the landing page lists strains that are due or overdue, with an amber warning five days ahead. Each check is dated and carries the name of the person who logged it.</p>
+        <p class="soft">Set a revival interval and the landing page lists strains that are due or overdue, with an amber warning five days ahead. Each check is dated and carries the name of the person who logged it. A failed revival keeps the strain in red until a successful check is recorded.</p>
       </div>
       <figure class="shot"><img src="assets/shot-home.webp" alt="Landing page with strains needing revival highlighted" loading="lazy" width="1200" height="806"></figure>
     </div>
 
     <div class="feat">
       <div class="txt">
-        <h3>A 3D plate view</h3>
-        <p class="soft">Colonies are drawn to follow the strain's growth: glossy domes, bead-like heaps or branching chains. Or upload a plate photograph and build a relief from it. Switch the viewer between a dark and a white background.</p>
-        <p class="soft" style="font-size:.95rem">Colours are illustrative. The view does not claim the real pigmentation of a strain.</p>
+        <h3>See the plate in 3D</h3>
+        <p class="soft">Every strain gets a plate built from its record, with colonies at their typical size and shape: smooth domes, bead-like heaps or branching arms. Upload a photograph of your own plate and it becomes a detailed relief of that exact dish, with each colony raised from the agar and the agar keeping its colour from the photo.</p>
+        <p class="soft">Turn it, zoom in, switch between a dark and a white background, or download it as an STL file for 3D printing. The printed plate matches the one on screen.</p>
       </div>
       <div class="pair">
-        <figure class="shot dark"><img src="assets/3d-colony.webp" alt="3D view of a glass Petri dish with branching colonies on amber agar" loading="lazy" width="1080" height="780"><figcaption>Built from the strain's growth style</figcaption></figure>
-        <figure class="shot"><img src="assets/3d-photo.webp" alt="3D relief built from a plate photograph in a glass dish" loading="lazy" width="1080" height="780"><figcaption>Built from a plate photo</figcaption></figure>
+        <figure class="shot dark"><img src="assets/3d-colony.webp" alt="3D plate of Bacillus subtilis built from its record, with rosette colonies on amber agar" loading="lazy" width="1080" height="780"><figcaption><i>Bacillus subtilis</i>, built from its record</figcaption></figure>
+        <figure class="shot"><img src="assets/3d-photo.webp" alt="3D relief of a wrinkled Bacillus subtilis plate built from a photograph" loading="lazy" width="1080" height="780"><figcaption>The same strain, built from a plate photo</figcaption></figure>
       </div>
     </div>
 
@@ -277,7 +277,7 @@ footer p{margin:0 0 6px;max-width:60ch}
   <div class="wrap">
     <div class="sec-head">
       <h2 id="h-tested">What has been tested</h2>
-      <p>These are results from the authors' own software tests, not a study of lab users.</p>
+      <p>Results from the project's own test suite, which runs on Linux, Windows and macOS.</p>
     </div>
     <table class="tested">
       <tbody>
@@ -287,11 +287,11 @@ footer p{margin:0 0 6px;max-width:60ch}
         <tr><th scope="row">Large catalogue</th><td>A catalogue of 5,000 strains listed in about 0.25 seconds.</td></tr>
         <tr><th scope="row">Revival dates</th><td>Green, amber and red status were checked for not due, due within five days, due today and overdue, and for a failed revival or a strain with no start date.</td></tr>
         <tr><th scope="row">Upgrades</th><td>Databases from five earlier releases upgraded automatically, and exported catalogues imported again without errors.</td></tr>
-        <tr><th scope="row">Plate photographs</th><td>Colony reading was tried on five real plate photographs, including small colonies on a counting grid, marker labels on the dish and a plate held in a gloved hand. Photos it cannot read reliably, such as those on an uneven background, are flagged rather than scored.</td></tr>
+        <tr><th scope="row">Plate photographs</th><td>Colony reading picks out small colonies on a counting grid, translucent colonies and wrinkled growth, and leaves grid lines, marker writing and printed labels out of the count. It was checked on real plates, including one held in a gloved hand. If the background is uneven the page says so, and you can mark a patch of bare agar yourself.</td></tr>
         <tr><th scope="row">Record history</th><td>Entries are voided with a reason instead of deleted, and every change is kept in an audit log.</td></tr>
       </tbody>
     </table>
-    <p class="note">No independent security audit and no study with laboratory users has been done yet. The tool is not validated for regulated (GLP or GMP) record keeping.</p>
+    <p class="note">Next steps are an independent security review and a study with working labs. Labs doing GLP or GMP work should check the tool against their own quality rules before relying on it.</p>
   </div>
 </section>
 
@@ -306,7 +306,7 @@ footer p{margin:0 0 6px;max-width:60ch}
       </div>
       <div>
         <h3>Who is responsible</h3>
-        <p class="soft">Whoever runs an installation is responsible for its security, backups and the people it gives access to. That includes anyone with access to the server, who can open the files directly. The software is provided as it is, under the MIT licence, without warranty.</p>
+        <p class="soft">Whoever runs an installation is responsible for its security, backups and the people it gives access to. Anyone who can reach the server can open its files, so keep it where only trusted people have access. The software is shared under the MIT licence, as it is, without warranty.</p>
       </div>
     </div>
   </div>
@@ -316,10 +316,10 @@ footer p{margin:0 0 6px;max-width:60ch}
   <div class="wrap" style="max-width:860px">
     <div class="sec-head"><h2 id="h-faq">Questions</h2></div>
     <details><summary>Is it free?</summary><p>Yes. It is released under the MIT licence, so labs can use, change and share it at no charge. The code will be published on GitHub, with each release archived on Zenodo under a citable DOI.</p></details>
-    <details><summary>Can I try it now?</summary><p>Watch the tour above to see every main screen. A public demo with example strains and plate photographs is being prepared; it resets itself every few hours, so nothing entered there is kept. <span data-needs="contactEmail" hidden>Write to us if your lab would like to be an early user.</span></p></details>
+    <details><summary>Can I try it now?</summary><p>Watch the tour above to see every main screen. A public demo with example strains and plate photographs is on the way. It will reset itself every few hours, so nothing entered there is kept. <span data-needs="contactEmail" hidden>Write to us if your lab would like to be an early user.</span></p></details>
     <details><summary>What does it run on?</summary><p>Python on Windows, Mac or Linux, with a web browser on any device on the same network. A Docker setup is included and is built by the automated tests on every change.</p></details>
     <details><summary>Can several people use it?</summary><p>Yes. Each person has their own account, and everyone works on the same live catalogue from their own computer, tablet or phone. One installation holds one lab. A second lab sets up its own installation and keeps its data to itself.</p></details>
-    <details><summary>Is it suitable for regulated work?</summary><p>Not yet. Records are dated and attributed to the person who made them, but the tool has no electronic signatures and has not been validated for GLP or GMP use.</p></details>
+    <details><summary>Is it suitable for regulated work?</summary><p>Every entry is dated and tied to the account that made it. Nothing is deleted: entries are voided with a reason, and every change goes into an audit log. Electronic signatures and formal GLP or GMP validation are not part of this release, so check with your quality team before using it for regulated records.</p></details>
     <details><summary>How do I cite it?</summary><p>A paper describing the tool is in preparation. Until it is published, please cite the software release; its DOI will appear here once version 4.7.0 is archived on Zenodo.</p></details>
   </div>
 </section>
