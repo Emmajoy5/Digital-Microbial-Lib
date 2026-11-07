@@ -92,7 +92,7 @@ section.tint{background:var(--frost)}
 /* tour */
 #tour{background:var(--night);color:#e6ebf5;background-image:radial-gradient(900px 500px at 15% 0%,var(--night-2),transparent 70%)}
 #tour h2{color:#fff}
-#tour .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,520px);gap:56px;align-items:center}
+#tour .grid{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:48px;align-items:center}
 #tour p{color:#aab6c9}
 .chapters{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:2px}
 .chapters button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;gap:16px;padding:10px 12px;border-radius:8px;color:#d4dcec;font-size:1.02rem}
@@ -100,7 +100,7 @@ section.tint{background:var(--frost)}
 .chapters button:focus-visible{outline:3px solid #f0b46a}
 .chapters .t{font-variant-numeric:tabular-nums;color:#7fd0e8;min-width:2.6em}
 .vwrap{border-radius:14px;overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.45)}
-video{width:100%;aspect-ratio:1/1;background:#000}
+video{width:100%;aspect-ratio:16/9;background:#000}
 
 /* features */
 .feat{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center;padding:34px 0}
@@ -180,7 +180,7 @@ footer p{margin:0 0 6px;max-width:60ch}
       <h1 id="h-hero">Know where every strain is and when it is due.</h1>
       <p class="lead">Microbial Digital Library keeps a brewing lab's working culture collection in one searchable place: freezer positions, revival dates, plate photographs and 3D plate views. It is free, open source and runs on your own computer.</p>
       <div class="btns">
-        <a class="btn primary" href="#tour">Watch the 55 second tour</a>
+        <a class="btn primary" href="#tour">Watch the 80 second tour</a>
         <a class="btn ghost" href="#features">See what it does</a>
         <a class="btn ghost" id="cta-contact" href="#" hidden>Get in touch</a>
       </div>
@@ -198,16 +198,18 @@ footer p{margin:0 0 6px;max-width:60ch}
 <section id="tour" aria-labelledby="h-tour">
   <div class="wrap grid">
     <div>
-      <h2 id="h-tour">The whole tool in under a minute</h2>
+      <h2 id="h-tour">The whole tool in 80 seconds</h2>
       <p style="margin-top:16px">Captions carry the story, so it works with the sound off. Jump to any part:</p>
       <ul class="chapters" id="chapters">
         <li><button data-t="9"><span class="t">0:09</span>See what needs reviving today</button></li>
-        <li><button data-t="14"><span class="t">0:14</span>Add a strain with its freezer position</button></li>
-        <li><button data-t="22"><span class="t">0:22</span>Check the storage map</button></li>
-        <li><button data-t="27"><span class="t">0:27</span>Turn the 3D plate</button></li>
-        <li><button data-t="35"><span class="t">0:35</span>Import a spreadsheet</button></li>
-        <li><button data-t="42"><span class="t">0:42</span>Print QR labels</button></li>
-        <li><button data-t="48"><span class="t">0:48</span>Open it on a phone</button></li>
+        <li><button data-t="15"><span class="t">0:15</span>Log a revival check</button></li>
+        <li><button data-t="26"><span class="t">0:26</span>Add a strain with its freezer position</button></li>
+        <li><button data-t="42"><span class="t">0:42</span>Keep plate photos with their conditions</button></li>
+        <li><button data-t="47"><span class="t">0:47</span>Turn the 3D plate</button></li>
+        <li><button data-t="53"><span class="t">0:53</span>Print QR labels</button></li>
+        <li><button data-t="57"><span class="t">0:57</span>Open it on a phone</button></li>
+        <li><button data-t="62"><span class="t">1:02</span>Search and the storage map</button></li>
+        <li><button data-t="70"><span class="t">1:10</span>Import a spreadsheet, export everything</button></li>
       </ul>
     </div>
     <div class="vwrap">
